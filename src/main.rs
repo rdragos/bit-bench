@@ -13,14 +13,14 @@ struct Opt {
 
 #[derive(Clone, PartialEq)]
 pub struct BitArrayRepr {
-    // pub data: BitVec<u8, Lsb0>,
+    pub data: BitVec<u8, Lsb0>,
     pub dim: IxDyn,
 }
 
 impl BitArrayRepr {
     pub fn from_raw(data: BitVec<u8, Lsb0>, dim: IxDyn) -> Self {
         BitArrayRepr {
-            // data: data,
+            data: data,
             dim,
         }
     }
